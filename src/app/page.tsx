@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-start gap-20 bg-black p-24'>
-      <h1 className='text-clip bg-gradient-to-l from-indigo-500 to-fuchsia-600 bg-clip-text font-permanent-marker text-[5rem] text-transparent'>
+      <h1 className='text-clip bg-gradient-to-l from-indigo-500 to-fuchsia-600 bg-clip-text font-permanent-marker text-6xl text-transparent lg:text-[5rem]'>
         Playground
       </h1>
       <Link href='/slider' className='group relative flex w-full items-center justify-center rounded-md p-4 lg:w-3/4'>
