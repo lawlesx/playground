@@ -1,4 +1,4 @@
-import Slider from './slider/page'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -6,7 +6,12 @@ export default function Home() {
       <h1 className='text-clip bg-gradient-to-l from-indigo-500 to-fuchsia-600 bg-clip-text font-permanent-marker text-6xl text-transparent'>
         Playground
       </h1>
-      <Slider />
+      <Link
+        href='/slider'
+        className='flex w-full items-center justify-center rounded-md p-4 outline outline-gray-400 hover:outline-2 hover:outline-white lg:w-3/4'
+      >
+        <h1 className='font-mono text-4xl font-semibold text-white'>Slider</h1>
+      </Link>
     </main>
   )
 }
