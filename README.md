@@ -1,3 +1,17 @@
+# Playground
+Nextjs Playground for Advanced UI Elements.
+Recreate advanced UI elements trending on Dribble,X, Behance.
+
+### 1. Slider
+![screencast-playground-gamma-seven vercel app-2024 03 24-22_47_32](https://github.com/lawlesx/playground/assets/52166437/6e8763f8-132f-4ea0-925e-acbe5968326d)
+
+Preview - https://playground-gamma-seven.vercel.app/slider
+
+An intuitive slider that allows you to adjust the amount of coffee and milk in your cup.
+
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
