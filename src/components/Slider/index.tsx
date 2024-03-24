@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import { MouseEventHandler, useEffect, useMemo, useRef, useState } from 'react'
+import { MouseEventHandler, TouchEventHandler, useEffect, useMemo, useRef, useState } from 'react'
 
 const Slider = () => {
   const [position, setPosition] = useState(250)
@@ -14,7 +14,7 @@ const Slider = () => {
   const milkContainerRef = useRef<HTMLDivElement>(null)
   const cursorRef = useRef<HTMLDivElement>(null)
 
-  const handleMouseMove: MouseEventHandler<HTMLDivElement> = (e) => {
+  const handleMouseMove: MouseEventHandler<HTMLDivElement> | TouchEventHandler<HTMLDivElement> = (e: any) => {
     if (isDragging && ref.current) {
       const slider = ref.current
       const newPosition = e.clientX - slider.getBoundingClientRect().left
@@ -32,9 +32,11 @@ const Slider = () => {
     }
 
     window.addEventListener('mouseup', handleMouseUp)
+    window.addEventListener('touchend', handleMouseUp)
 
     return () => {
       window.removeEventListener('mouseup', handleMouseUp)
+      window.removeEventListener('touchend', handleMouseUp)
     }
   }, [])
 
@@ -55,7 +57,9 @@ const Slider = () => {
       ref={ref}
       className='tran relative h-10 w-[400px] rounded-md'
       onMouseDown={() => setIsDragging(true)}
-      onMouseMove={handleMouseMove}
+      onTouchStart={() => setIsDragging(true)}
+      onMouseMove={handleMouseMove as MouseEventHandler<HTMLDivElement>}
+      onTouchMove={handleMouseMove as TouchEventHandler<HTMLDivElement>}
     >
       {/* --------------------------------- Cursor --------------------------------- */}
       <motion.div
