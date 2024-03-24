@@ -12,12 +12,32 @@ const Slider = () => {
           An intuitive slider that allows you to adjust the amount of coffee and milk in your cup.
         </p>
       </div>
-      <div className='flex h-40 flex-col items-center justify-center gap-10'>
-        <h2 className='p-2 font-mono text-white'>Made using framer motion</h2>
+      <div className='flex flex-col items-center justify-center gap-10'>
+        <h2 className='p-2 font-mono text-white'>
+          Made using framer motion -{' '}
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://github.com/lawlesx/playground/blob/main/src/components/Slider/index.tsx'
+            className='font-mono text-white underline'
+          >
+            View Source
+          </a>
+        </h2>
         <FramerSlider />
       </div>
-      <div className='flex h-40 flex-col items-center justify-center gap-10'>
-        <h2 className='p-2 font-mono text-white'>Made without using framer motion</h2>
+      <div className='flex flex-col items-center justify-center gap-10'>
+        <h2 className='p-2 font-mono text-white'>
+          Made without using framer motion -{' '}
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://github.com/lawlesx/playground/blob/main/src/components/Slider/NonFramerSlider.tsx'
+            className='font-mono text-white underline'
+          >
+            View Source
+          </a>
+        </h2>
         <NonFramerSlider />
       </div>
     </main>
