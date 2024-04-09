@@ -8,29 +8,25 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Playground - Slider',
     description: 'An intuitive slider that allows you to adjust the amount of coffee and milk in your cup.',
-    images: [
-      {
-        url: 'https://res.cloudinary.com/dk7dt0kk3/image/upload/v1712679946/Playground%20Meta%20Images/Slider_Meta_Image_eywnsq.png',
-        width: 1200,
-        height: 630,
-        alt: 'Slider',
-      },
-    ],
+    images: {
+      url: 'https://res.cloudinary.com/dk7dt0kk3/image/upload/v1712679946/Playground%20Meta%20Images/Slider_Meta_Image_eywnsq.png',
+      width: 1200,
+      height: 630,
+      alt: 'Slider',
+    },
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     title: 'Playground - Slider',
     description: 'An intuitive slider that allows you to adjust the amount of coffee and milk in your cup.',
-    images: [
-      {
-        url: 'https://res.cloudinary.com/dk7dt0kk3/image/upload/v1712679946/Playground%20Meta%20Images/Slider_Meta_Image_eywnsq.png',
-        width: 1200,
-        height: 630,
-        alt: 'Slider',
-      },
-    ],
+    images:
+      'https://res.cloudinary.com/dk7dt0kk3/image/upload/v1712679946/Playground%20Meta%20Images/Slider_Meta_Image_eywnsq.png',
     card: 'summary_large_image',
-    site: '@lawlesx',
+    creator: '@lawlesx',
   },
+  authors: { name: 'Aniruddha Sil', url: 'https://lawlesx.vercel.app/' },
+  keywords: ['Slider', 'Framer Motion', 'React', 'Next.js'],
 }
 
 const Slider = () => {
