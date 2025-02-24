@@ -17,3 +17,14 @@
   border-radius: 10px;
   filter: blur(0.25px);
 }
+
+.sword-handle::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #232531;
+  border-radius: 50%;
+  clip-path: ellipse(50% 18% at 50% 50%);
+}
