@@ -1,3 +1,4 @@
+import RainGaurd from '@/components/Sword/RainGaurd/RainGaurd'
 import SwordHandle from '@/components/Sword/SwordHandle/SwordHandle'
 import './style.css'
 
@@ -11,8 +12,8 @@ const Sword = () => {
           <div className='aspect-square w-1/2 rounded-full bg-[#E81B22]'></div>
           {/* ----------------------------- Sword Container ---------------------------- */}
           <div className='absolute top-0 flex h-full w-full flex-col items-center justify-start'>
-            {/* ------------------------------ Sword Handle ----------------------------- */}
             <SwordHandle />
+            <RainGaurd />
           </div>
         </div>
       </div>
