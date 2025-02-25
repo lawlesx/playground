@@ -1,3 +1,4 @@
+import Blade from '@/components/Sword/Blade/Blade'
 import RainGaurd from '@/components/Sword/RainGaurd/RainGaurd'
 import SwordHandle from '@/components/Sword/SwordHandle/SwordHandle'
 import './style.css'
@@ -14,6 +15,7 @@ const Sword = () => {
           <div className='absolute top-0 flex h-full w-full flex-col items-center justify-start'>
             <SwordHandle />
             <RainGaurd />
+            <Blade />
           </div>
         </div>
       </div>
