@@ -3,28 +3,6 @@
   overflow: hidden;
 }
 
-.noise {
-  aspect-ratio: 1;
-  position: relative;
-}
-
-.noise::before {
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-  inset: 0;
-  background: repeating-radial-gradient(closest-corner at 21% 21%, #fff, rgba(100, 100, 112, 0.5), rgb(3, 0, 255) 20%),
-    repeating-radial-gradient(closest-corner at 61% 21%, #fff, rgba(255, 255, 255, 0.5), rgb(0, 0, 0) 20%),
-    repeating-radial-gradient(closest-corner at 91% 51%, #fff, rgba(255, 255, 255, 0.5), rgb(0, 0, 0) 20%);
-  background-size:
-    15px 13px,
-    12px 22px,
-    12px 22px;
-  background-blend-mode: difference, normal;
-  mix-blend-mode: color-burn;
-  content: '';
-}
-
 .hollow {
   width: 250px;
   aspect-ratio: 1/1;
@@ -36,43 +14,35 @@
   top: -50px;
 }
 
-.circle-highlight {
-  width: 160px;
-  aspect-ratio: 1/1;
-  background-color: rgba(255, 245, 245, 0.06);
+.circle-highlight,
+.circle-highlight-1,
+.circle-highlight-2,
+.circle-highlight-3 {
+  position: absolute;
   z-index: 2;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+.circle-highlight {
+  width: 160px;
+  background-color: rgba(255, 245, 245, 0.06);
 }
 
 .circle-highlight-1 {
   width: 140px;
-  aspect-ratio: 1/1;
   background-color: rgba(255, 212, 212, 0.06);
-  z-index: 2;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .circle-highlight-2 {
   width: 120px;
-  aspect-ratio: 1/1;
   background-color: rgba(255, 245, 245, 0.06);
-  z-index: 2;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .circle-highlight-3 {
   width: 100px;
-  aspect-ratio: 1/1;
   background-color: rgba(255, 212, 212, 0.06);
-  z-index: 2;
-  border-radius: 50%;
 }
