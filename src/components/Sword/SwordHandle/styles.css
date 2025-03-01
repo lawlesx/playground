@@ -28,3 +28,12 @@
   border-radius: 50%;
   clip-path: ellipse(50% 18% at 50% 50%);
 }
+
+.handle-highlight {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  filter: blur(10px);
+  border-radius: 50%;
+}

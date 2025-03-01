@@ -1,5 +1,6 @@
 .background {
   background-image: linear-gradient(#171f32 0%, #101113 90%);
+  overflow: hidden;
 }
 
 .noise {
@@ -22,4 +23,56 @@
   background-blend-mode: difference, normal;
   mix-blend-mode: color-burn;
   content: '';
+}
+
+.hollow {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: rgba(92, 78, 117, 0.253);
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+  filter: blur(50px);
+  top: -50px;
+}
+
+.circle-highlight {
+  width: 160px;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 245, 245, 0.06);
+  z-index: 2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.circle-highlight-1 {
+  width: 140px;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 212, 212, 0.06);
+  z-index: 2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.circle-highlight-2 {
+  width: 120px;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 245, 245, 0.06);
+  z-index: 2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.circle-highlight-3 {
+  width: 100px;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 212, 212, 0.06);
+  z-index: 2;
+  border-radius: 50%;
 }
