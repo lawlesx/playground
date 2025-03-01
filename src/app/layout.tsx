@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Playground',
     description: 'A playground where imagination comes to life—create, animate, and innovate.',
     images: {
-      url: 'https://res.cloudinary.com/dk7dt0kk3/image/upload/v1712679946/Playground%20Meta%20Images/Slider_Meta_Image_eywnsq.png',
+      url: 'https://res.cloudinary.com/dk7dt0kk3/image/upload/v1740852271/Mad_Playground_yhvhzb.png',
       width: 1200,
       height: 630,
       alt: 'Slider',
@@ -28,8 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Playground',
     description: 'A playground where imagination comes to life—create, animate, and innovate.',
-    images:
-      'https://res.cloudinary.com/dk7dt0kk3/image/upload/v1712679946/Playground%20Meta%20Images/Slider_Meta_Image_eywnsq.png',
+    images: 'https://res.cloudinary.com/dk7dt0kk3/image/upload/v1740852271/Mad_Playground_yhvhzb.png',
     card: 'summary_large_image',
     creator: '@lawlesx',
   },
