@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Permanent_Marker, Petit_Formal_Script } from 'next/font/google'
+import { Permanent_Marker, Petit_Formal_Script, Sour_Gummy } from 'next/font/google'
 import './globals.css'
 
 const permanentMarker = Permanent_Marker({ weight: ['400'], subsets: ['latin'], variable: '--font-permanent-marker' })
@@ -8,6 +8,7 @@ const petitFormalScript = Petit_Formal_Script({
   subsets: ['latin-ext'],
   variable: '--font-petit-formal-script',
 })
+const sourGummy = Sour_Gummy({ weight: ['400'], subsets: ['latin'], variable: '--font-sour-gummy' })
 
 export const metadata: Metadata = {
   title: 'Playground',
@@ -43,7 +44,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${permanentMarker.variable} ${petitFormalScript.variable}`}>{children}</body>
+      <body className={`${permanentMarker.variable} ${petitFormalScript.variable} ${sourGummy.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }

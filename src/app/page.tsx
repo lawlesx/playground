@@ -7,6 +7,7 @@ export default function Home() {
         Playground
       </h1>
       <HighlightButton text='Slider' link='/slider' />
+      <HighlightButton text='Sword' link='/sword' />
     </main>
   )
 }

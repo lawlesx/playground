@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         'permanent-marker': ['var(--font-permanent-marker)'],
         'petit-formal-script': ['var(--font-petit-formal-script)'],
+        'sour-gummy': ['var(--font-sour-gummy)'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
