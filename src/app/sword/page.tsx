@@ -37,10 +37,10 @@ const Sword = () => {
   return (
     <main className='flex h-screen w-full flex-col items-center justify-center gap-6'>
       <div className='flex flex-col items-center gap-4'>
-        <h1 className='font-sour-gummy text-clip bg-gradient-to-r from-[#E57627] to-[#FDFDFD] bg-clip-text text-6xl text-transparent'>
+        <h1 className='text-clip bg-gradient-to-r from-[#E57627] to-[#FDFDFD] bg-clip-text font-sour-gummy text-6xl text-transparent'>
           CSS Sword - A Pure HTML & CSS Creation
         </h1>
-        <p className='font-sour-gummy w-full text-center text-lg text-white md:w-3/4'>
+        <p className='w-full text-center font-sour-gummy text-lg text-white md:w-3/4'>
           A sword crafted entirely with HTML and CSS, using a combination of creative CSS shapes. No SVGs or images—just
           pure code magic.
         </p>
@@ -55,7 +55,7 @@ const Sword = () => {
         View Source
       </a>
 
-      <div className='h-[512px] w-[375px]  p-2'>
+      <div className='h-[512px] w-[375px] bg-white p-2'>
         {/* ------------------------------- Art Canvas ------------------------------- */}
         <div className='background relative flex h-full w-full flex-col items-center pt-14'>
           <div className='hollow' />
