@@ -5,10 +5,15 @@ Recreate advanced UI elements trending on Dribble,X, Behance.
 ### 1. Slider
 ![screencast-playground-gamma-seven vercel app-2024 03 24-22_47_32](https://github.com/lawlesx/playground/assets/52166437/6e8763f8-132f-4ea0-925e-acbe5968326d)
 
-Preview - https://playground-gamma-seven.vercel.app/slider
+Preview - https://mad-playground.vercel.app/slider
 
 An intuitive slider that allows you to adjust the amount of coffee and milk in your cup.
 
+### 1. CSS Sword - A Pure HTML & CSS Creation
+A sword crafted entirely with HTML and CSS, using a combination of creative CSS shapes. No SVGs or images—just pure code magic.
+<img width="1200" alt="Css Sword" src="https://github.com/user-attachments/assets/626d0863-8a34-4fa6-b8a6-2271361ee45e" />
+
+Preview - https://mad-playground.vercel.app/sword
 
 ---
 
