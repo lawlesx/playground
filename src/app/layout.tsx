@@ -3,6 +3,7 @@ import { Permanent_Marker, Petit_Formal_Script, Sour_Gummy } from 'next/font/goo
 import './globals.css'
 
 const permanentMarker = Permanent_Marker({ weight: ['400'], subsets: ['latin'], variable: '--font-permanent-marker' })
+
 const petitFormalScript = Petit_Formal_Script({
   weight: ['400'],
   subsets: ['latin-ext'],
